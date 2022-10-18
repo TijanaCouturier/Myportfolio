@@ -1,0 +1,58 @@
+.about-me {
+    width: 100vw;
+    max-width: 100%;
+    background-color: rgb(19, 17, 17);
+    // position: absolute;
+    // top: 3800px;
+    //height: 1000px;
+    .about-me-text {
+        color: white;
+        font-size: 24px;
+        max-width: 400px;
+    }
+    .about-me-header {
+        display: flex;
+        justify-content: space-evenly;
+        border-bottom: 2px solid rgb(26, 76, 67);
+        margin-top: 80px;
+        margin-bottom: 100px;
+        img {
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+            border-radius: 100%;
+            margin-bottom: 100px;
+        }
+        p {
+            color: white;
+        }
+    }
+    .journey {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 180px;
+        padding-right: 180px;
+        color: white;
+        img {
+            position: relative;
+            top: 15px;
+            left: 15px;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+        }
+        p {
+            padding-right: 30px;
+            max-width: 250px;
+        }
+        .img-circle {
+            background-color: rgb(45, 252, 216);
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            position: relative;
+            left: 50px;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.contact {
+    //  position: absolute;
+    // top: 4750px;
+    //  height: 1000px;
+    margin-top: 100px;
+    width: 100vw;
+    max-width: 100%;
+    a {
+        color: rgb(30, 166, 142);
+        text-decoration: none;
+        cursor: pointer;
+        padding-left: 5px;
+    }
+    h1 {
+        color: rgb(45, 252, 216);
+        font-size: 64px;
+        display: flex;
+        justify-content: center;
+        padding-right: 335px;
+    }
+    h5 {
+        color: white;
+        font-size: 22px;
+    }
+    p {
+        color: white;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+    }
+    input {
+        background-color: rgb(26, 26, 26);
+        border: 0;
+        padding: 20px;
+        padding-right: 415px;
+        font-size: 20px;
+        outline-color: rgb(30, 166, 142);
+        color: white;
+        margin-top: 50px;
+    }
+    .message {
+        height: 150px;
+    }
+    .form {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .send-btn {
+        height: 50px;
+        width: 120px;
+        background-color: black;
+        border: solid 2px rgb(45, 252, 216);
+        color: rgb(45, 252, 216);
+        font-size: 20px;
+        margin-left: 545px;
+        cursor: pointer;
+        margin-top: 35px;
+    }
+}

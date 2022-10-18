@@ -1,0 +1,29 @@
+<div class="contact">
+    <h1>Contact me.</h1>
+    <p>Get in touch via the from bellow, or by emailling <a href="tijana.couturier@web.de">tijana.couturier@web.de</a>.</p>
+
+    <form (submit)="sendMail()" ngNativeValidate #myForm class="form">
+
+        <input required type="text" name="name" #nameField placeholder="Enter your name *">
+
+        <input required type="text" name="email" #emailField placeholder="Enter your Email address *">
+
+        <input required type="text" name="message" #messageField class="message" placeholder="Enter your message *">
+
+        <button #sendButton class="send-btn">Send</button>
+    </form>
+
+</div>
+
+<!--
+     <form (submit)="sendMail()" ngNativeValidate #myForm class="form">
+        <h5>Name</h5>
+        <input required type="text" name="name" #nameField placeholder="Enter your name">
+        <h5>Email address</h5>
+        <input required type="text" name="email" #emailField placeholder="Enter your Email address">
+        <h5>Message</h5>
+        <input required type="text" name="message" #messageField class="message" placeholder="Enter your message">
+
+        <button #sendButton class="send-btn">Send</button>
+    </form>
+-->
