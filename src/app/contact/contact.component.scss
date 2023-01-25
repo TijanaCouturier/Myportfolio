@@ -1,18 +1,15 @@
 .contact {
-    //  position: absolute;
-    // top: 4750px;
-    //  height: 1000px;
     margin-top: 100px;
     width: 100vw;
     max-width: 100%;
     a {
-        color: rgb(30, 166, 142);
+        color: #2DFCD8;
         text-decoration: none;
         cursor: pointer;
         padding-left: 5px;
     }
     h1 {
-        color: rgb(45, 252, 216);
+        color: #2DFCD8;
         font-size: 64px;
         display: flex;
         justify-content: center;
@@ -48,15 +45,24 @@
         flex-direction: column;
         align-items: center;
     }
-    .send-btn {
+    button {
         height: 50px;
-        width: 120px;
+        width: 150px;
         background-color: black;
-        border: solid 2px rgb(45, 252, 216);
-        color: rgb(45, 252, 216);
-        font-size: 20px;
-        margin-left: 545px;
-        cursor: pointer;
+        font-size: 18px;
+        margin-left: 530px;
         margin-top: 35px;
+        //relevant
+        border: 2px solid #2dfcd964;
+        color: #2dfcd964;
+        cursor: unset;
+        //ausgefüllt:
+        //  border: solid 2px rgb(45, 252, 216);
+        //   color: rgb(45, 252, 216);
+        //   cursor: pointer;
+    }
+    .button:disabled {
+        background-color: #2DFCD8;
+        color: black;
     }
 }

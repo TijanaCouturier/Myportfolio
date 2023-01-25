@@ -1,13 +1,12 @@
 <div class="footer">
     <div class="router-links">
-        <a routerLink="/imprint">Impressum - Legal Notice</a>
-        <a routerLink="/data-protection">Datenschützerklärung - Data protection</a>
+        <a routerLink="./imprint">Impressum - Legal Notice</a>
+        <a routerLink="./data-protection">Datenschützerklärung - Data protection</a>
         <p>@ 2022 by Tijana Couturier</p>
     </div>
 
     <div class="footer-links">
-        <img src="assets/img/Portfolio-img/linkedin-box-fill.png">
-        <img class="github-icon" src="assets/img/Portfolio-img/github-fill.png">
-        <img src="assets/img/Portfolio-img/xing-fill.png">
+        <img routerLinkActive="active" routerLink="/" href="#home" src="assets/img/portfolio-logo.png">
+        <a href="{{links.link}}" *ngFor="let links of footerLinks; let i = index" (click)="openNewTabs(i)"><img src="assets/img/Portfolio-img/{{links.img}}"></a>
     </div>
 </div>

@@ -1,12 +1,11 @@
 <div class="header-text-img">
     <div>
-        <p>Hi, <br> I'm <b class="name">Tijana</b> Couturier <br> Front End develop<b class="e">e</b>r</p>
-        <div>
-            <div class="example-button-row">
-                <button class="primary">Contact me</button>
-            </div>
+        <p data-aos="fade-right" data-aos-easing="ease-out-cubis">Hi, <br> I'm <b class="name" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">Tijana</b> Couturier, <br> Front End develop<b class="e">e</b>r</p>
 
-        </div>
+        <a href="#contact" routerLinkActive="active">
+            <button mat-raised-button href="#contact" class="primary">Contact me</button>
+        </a>
+
     </div>
 
     <div class="myImg">
@@ -15,14 +14,10 @@
 </div>
 
 <div class="arrow">
-    <img src="assets/img/arrow-white.png">
+    <img data-aos="fade-down" src="assets/img/arrow.png">
 </div>
 
 
-<app-my-skills></app-my-skills>
-<app-my-work></app-my-work>
-<app-about-me></app-about-me>
-<app-contact></app-contact>
 
 <!--
 <button (click)="openDialog()" class="add-user-btn" mat-fab color="primary" matTooltip="Add user">

@@ -6,19 +6,19 @@
     width: 100vw;
     height: 200px;
     max-width: 100%;
-    //  position: absolute;
-    //   top: 5800px;
     .footer-links {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-right: 150px;
+        cursor: pointer;
+        padding-right: 180px;
     }
     .router-links {
         display: flex;
         flex-direction: column;
         margin-top: 40px;
         font-weight: 500;
+        padding-left: 130px;
         a {
             text-decoration: none;
             // color: rgb(201, 207, 213);
@@ -27,27 +27,17 @@
             padding-left: 50px;
             font-size: 20px;
             &:hover {
-                color: rgb(250, 39, 89);
+                color: #FA2759;
                 font-weight: 800;
             }
         }
         p {
-            text-decoration: none;
-            // color: rgb(201, 207, 213);
-            color: black;
-            padding-left: 50px;
             font-size: 20px;
-            &:hover {
-                color: rgb(250, 39, 89);
-                font-weight: 800;
-            }
+            padding-left: 50px;
         }
     }
     img {
-        height: 50px;
-    }
-    .github-icon {
-        margin-left: 150px;
-        margin-right: 150px;
+        width: 60px;
+        padding-left: 50px;
     }
 }

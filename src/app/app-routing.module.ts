@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AllProjectsComponent } from './all-projects/all-projects.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
-import { HeaderTextComponent } from './header-text/header-text.component';
 import { ImprintComponent } from './imprint/imprint.component';
 
-//Kontrollieren
 const routes: Routes = [
- { path: 'header-text', component: HeaderTextComponent },
+ { path: '', component: AllProjectsComponent},
   { path: 'imprint', component: ImprintComponent },
   { path: 'data-protection', component: DataProtectionComponent }
 ];

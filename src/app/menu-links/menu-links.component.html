@@ -1,10 +1,67 @@
 <header id="home">
-    <img routerLink="/" href="#home" src="assets/img/logo-portfolio.png">
+    <img routerLink="/" href="#home" src="assets/img/portfolio-logo.png">
 
     <div class="links">
-        <a routerLink="/" class="home" href="#home" routerLinkActive="active">HOME</a>
+        <a routerLink="/" style="color: #FA2759;" class="home" href="#home" routerLinkActive="active">HOME</a>
         <a href="#about-me" routerLinkActive="active">ABOUT ME</a>
         <a href="#portfolio" routerLinkActive="active">PORTFOLIO</a>
     </div>
 
+
+    <div id="openSidebarMenu" class="menu d-none">
+        <img (click)="showMenu()" src="assets/img/menu.png">
+    </div>
+
+
+    <div id="menu" class="overlay-menu d-none">
+        <div class="links-mobil">
+            <a href="#home">HOME</a>
+            <a href="#about-me">ABOUT ME</a>
+            <a href="#portfolio">PORTFOLIO</a>
+        </div>
+
+        <div>
+            <img src="assets/img/x-icon.png" (click)="closeMenu()" class="close">
+        </div>
+
+    </div>
+
+
+
 </header>
+
+
+
+
+<!--
+
+
+
+
+        <img (click)="showMenu()" class="menu" src="list.png">
+
+    <div id="menu" class="overlay-menu">
+        <a href="#home">HOME</a>
+        <a href="#about-me">ABOUT ME</a>
+        <a href="#portfolio">PORTFOLIO/a>
+        
+
+        <button (click)="closeMenu()" class="close-button">Close</button>
+
+    </div>
+
+    <div class="d-none" id="sidebarMenu">
+       <ul>
+            <li>
+                <a href="#home">HOME</a>
+            </li>
+            <li>
+                <a href="about-me">ABOUT ME</a>
+            </li>
+            <li>
+                <a href="#portfolio">PORTFOLIO</a>
+            </li>
+        </ul>
+    </div>
+         
+    -->

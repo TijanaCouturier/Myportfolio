@@ -12,4 +12,10 @@ export class MenuLinksComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showMenu(){
+   document.getElementById('menu').classList.add('show-overlay-menu');
+  }
+  closeMenu(){
+    document.getElementById('menu').classList.remove('show-overlay-menu');
+  }
 }

@@ -13,8 +13,8 @@ import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
-//import { MatIconModule} from '@angular/material/icon';
-//import {MatButtonModule} from '@angular/material/button';
+import { AllProjectsComponent } from './all-projects/all-projects.component';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -28,17 +28,17 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
     AboutMeComponent,
     ContactComponent,
     ImprintComponent,
-    DataProtectionComponent
+    DataProtectionComponent,
+    AllProjectsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
-    //MatButtonModule
-    //MatIconModule
-
-
+    ReactiveFormsModule,
+    MatButtonModule, 
+   
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

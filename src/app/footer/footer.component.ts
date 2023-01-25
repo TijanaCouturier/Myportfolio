@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  footerLinks = [ 
+    {
+      img: 'github-fill.png', 
+      link: 'https://github.com/TijanaCouturier'
+    },
+    {
+      img: 'xing-fill.png', 
+      link: 'https://www.xing.com/profile/Tijana_Couturier/cv',
+    }
+  ];
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  openNewTabs(t) {
+  // window.open(this.footerLinks.link[t]);
   }
 
 }

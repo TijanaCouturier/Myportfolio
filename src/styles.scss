@@ -4,8 +4,34 @@ html {
     background-color: black;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    // overflow-x: hidden;
     height: 100%;
-    .scrollbar {
+    /* width */
+     ::-webkit-scrollbar {
+        width: 12px;
+    }
+    /* Track */
+     ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    /* Handle */
+     ::-webkit-scrollbar-thumb {
+        background: #2BBBAD;
+        border-radius: 10px;
+    }
+    /* Handle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+        background: #2DFCD8;
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+
+/*
+  .scrollbar {
         margin-left: 30px;
         float: right;
         height: 100%;
@@ -34,4 +60,4 @@ html {
     .scrollbar-default {
         scrollbar-color: #2BBBAD #F5F5F5;
     }
-}
+    */
