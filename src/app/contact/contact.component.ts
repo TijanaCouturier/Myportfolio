@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit {
  inputName: string = '';
  inputEmail: string = '';
  inputMessage: string = '';
- send = true;
+ send = false;
  names: string = '';
 
   constructor() { }
@@ -67,5 +67,18 @@ export class ContactComponent implements OnInit {
     messageField.value = '';
     emailField.value = '';
 
+   
+
+  }
+  lengthtest(){
+    if (this.nameField.nativeElement.value.length != 0 && this.emailField.nativeElement.value.length != 0
+      && this.messageField.nativeElement.value.length != 0){
+      console.log('Sending mailxxxxxx');
+      // CODE BLAU UND ENABLED
+    }
+    else {
+    // SCHWARZ und DISABLED
+    }
+    
   }
 }
