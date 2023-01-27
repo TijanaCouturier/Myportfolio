@@ -29,12 +29,13 @@
     .projects {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        // gap: var(--space-m);
+        justify-content: center;
+        // max-width: 1600px;
+        gap: var(--space-m);
         //  max-width: 1200px;
         margin-top: 30px;
-        padding-left: 180px;
-        padding-right: 180px;
+        padding-left: 300px;
+        padding-right: 300px;
         // margin-top: var(--space-m);
         //padding-top: 30px;
         // padding-left: 180px;
@@ -51,13 +52,16 @@
             //  width: 400px;
             object-fit: contain;
             max-width: 100%;
-            width: 500px;
+            width: 550px;
             display: block;
             /* display: flex;
             cursor: pointer;
             padding: 20px; */
             // padding-bottom: 60px; //
             // padding-left: 60px; // 
+        }
+        .projects-container {
+            padding: 30px;
         }
         .projects-hover {
             position: relative;
@@ -79,8 +83,6 @@
             left: 0;
             right: 0;
             bottom: 0;
-            display: flex;
-            justify-content: space-around;
             flex-wrap: wrap;
             overflow: hidden;
             padding: var(--space-m);
@@ -131,6 +133,8 @@
                 color: #FA2759;
                 border: solid 2px #FA2759;
                 font-size: 18px;
+                position: absolute;
+                bottom: 40px;
                 &:hover {
                     background-color: #FA2759;
                     color: white;

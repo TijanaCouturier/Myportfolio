@@ -2,11 +2,11 @@
     <div class="router-links">
         <a routerLink="./imprint">Impressum - Legal Notice</a>
         <a routerLink="./data-protection">Datenschützerklärung - Data protection</a>
-        <p>@ 2022 by Tijana Couturier</p>
+        <p>@ 2023 by Tijana Couturier</p>
     </div>
 
     <div class="footer-links">
         <img routerLinkActive="active" routerLink="/" href="#home" src="assets/img/portfolio-logo.png">
-        <a href="{{links.link}}" *ngFor="let links of footerLinks; let i = index" (click)="openNewTabs(i)"><img src="assets/img/Portfolio-img/{{links.img}}"></a>
+        <img (click)="openLink(i)" *ngFor="let img of images; let i = index" src="assets/img/Portfolio-img/{{img}}">
     </div>
 </div>

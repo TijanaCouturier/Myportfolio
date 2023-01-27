@@ -11,13 +11,13 @@
 
 
     <div class="projects">
-        <div class="projects-container" data-aos="fade-in" data-aos-offset="100" *ngFor="let picture of getallProjectPictures() let i = index" (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false">
+        <div class="projects-container" data-aos="fade-in" data-aos-offset="100" *ngFor="let picture, let project of getallProjectPictures() let i = index" (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false">
 
             <div class="projects-hover">
                 <img src="assets/img/{{ picture['path'] }}">
 
 
-                <div (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false" *ngFor="let project of getallDescriptions(); let i = index" class="projekt-info">
+                <div (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false" class="projekt-info">
                     <span ng-bind-html="user | name | highlight:searchTerm" class="title" [hidden]="!isChangedBlock[i]">{{project['title']}}</span>
                     <span class="hover-decription" [hidden]="!isChangedBlock[i]">{{project["description"]}}</span>
                     <p>{{project["p"]}}</p>
