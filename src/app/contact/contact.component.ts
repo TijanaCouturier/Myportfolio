@@ -63,7 +63,7 @@ export class ContactComponent implements OnInit {
     nameField.disabled = false;
     messageField.disabled = false;
     emailField.disabled = false;
-    sendButton.disabled = false;
+    sendButton.disabled = true;
     //change color to enabled
     
     nameField.value = '';

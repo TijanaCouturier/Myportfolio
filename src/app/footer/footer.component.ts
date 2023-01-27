@@ -23,7 +23,9 @@ export class FooterComponent implements OnInit {
   }
 
   openNewTabs(t) {
-  // window.open(this.footerLinks.link[t]);
+  //window.open(this.footerLinks.link[t]);
   }
+  
+
 
 }

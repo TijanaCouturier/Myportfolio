@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 
 
@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class MyWorkComponent implements OnInit {
 
   t = 0;
-  
+ @Input() startColor = true;
 
   public isChangedBlock = {};
   public searchparam = "all";
@@ -60,9 +60,11 @@ export class MyWorkComponent implements OnInit {
     if (this.t == t){
       this.t = 0;
       this.searchparam = 'all';
+     
     }
     else {
       this.t = t;
+      this.startColor = false;
     }
   }
 

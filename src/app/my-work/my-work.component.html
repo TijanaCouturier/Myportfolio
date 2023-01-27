@@ -2,7 +2,7 @@
     <h1 data-aos="flip-right" data-aos-easing="ease-out-cubis">My work</h1>
 
     <div class="btn">
-        <button mat-stroked-button color="primary" [style.background-color]="t!=1 ? 'black' : '#FA2759'" #all (click)="setSearchParam('all', '1')" class="btn-left-right left">All</button>
+        <button [class.btnActiv]="startColor" mat-stroked-button color="primary" [style.background-color]="t!=1 ? 'black' : '#FA2759'" #all (click)="setSearchParam('all', '1')" class="btn-left-right left">All</button>
 
         <button mat-stroked-button color="primary" [style.background-color]="t!=2 ? 'black' : '#FA2759'" #angular (click)="setSearchParam('angular', '2')" class="btn-mit">Angular</button>
 
@@ -11,6 +11,33 @@
 
 
     <div class="projects">
+        <div class="projects-container" data-aos="fade-in" data-aos-offset="100" *ngFor="let picture of getallProjectPictures() let i = index" (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false">
+
+            <div class="projects-hover">
+                <img src="assets/img/{{ picture['path'] }}">
+
+
+                <div (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false" *ngFor="let project of getallDescriptions(); let i = index" class="projekt-info">
+                    <span ng-bind-html="user | name | highlight:searchTerm" class="title" [hidden]="!isChangedBlock[i]">{{project['title']}}</span>
+                    <span class="hover-decription" [hidden]="!isChangedBlock[i]">{{project["description"]}}</span>
+                    <p>{{project["p"]}}</p>
+                    <div class="project-btn">
+                        <button mat-stroked-button color="primary" (click)="openNewTab(i)" [hidden]="!isChangedBlock[i]">Try</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!--
+ <div class="projects">
         <div class="projects-container">
 
             <img (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false" *ngFor="let picture of getallProjectPictures() let i = index" data-aos="fade-in" data-aos-offset="100" src="assets/img/{{ picture['path'] }}">
@@ -35,7 +62,29 @@
 
 
 
-<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="projects">
     <div class="projects-container">

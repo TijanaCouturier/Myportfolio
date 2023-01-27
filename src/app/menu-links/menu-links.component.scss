@@ -26,6 +26,9 @@ header {
             color: #FA2759;
         }
     }
+    .linksActiv {
+        color: #FA2759 !important;
+    }
     .links {
         transition: all 125ms ease-in-out;
     }
@@ -87,8 +90,4 @@ header {
     a {
         padding: 25px;
     }
-}
-
-.home {
-    color: #FA2759;
 }

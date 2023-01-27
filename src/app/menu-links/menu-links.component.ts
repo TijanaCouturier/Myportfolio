@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu-links',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuLinksComponent implements OnInit {
 
+
+  @Input() startColor = true;
+  active = 0;
+
   constructor() { }
 
   ngOnInit(): void {
+  
   }
 
   showMenu(){
@@ -17,5 +22,17 @@ export class MenuLinksComponent implements OnInit {
   }
   closeMenu(){
     document.getElementById('menu').classList.remove('show-overlay-menu');
+  }
+
+  oK(active){
+    if (this.active == active){
+      this.active = 0;
+
+    }
+    else {
+      this.active = active;
+      this.startColor = false;
+    }
+    
   }
 }

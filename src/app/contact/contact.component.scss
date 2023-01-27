@@ -46,23 +46,24 @@
         align-items: center;
     }
     button {
+        background-color: #2DFCD8;
+        color: black;
         height: 50px;
         width: 150px;
-        background-color: black;
         font-size: 18px;
         margin-left: 530px;
         margin-top: 35px;
         //relevant
-        border: 2px solid #2dfcd964;
-        color: #2dfcd964;
-        cursor: unset;
+        cursor: pointer;
         //ausgefüllt:
         //  border: solid 2px rgb(45, 252, 216);
         //   color: rgb(45, 252, 216);
         //   cursor: pointer;
     }
     button:disabled {
-        background-color: #2DFCD8;
-        color: black;
+        background-color: black;
+        border: 2px solid #2dfcd964;
+        color: #2dfcd964;
+        cursor: unset;
     }
 }

@@ -2,9 +2,9 @@
     <img routerLink="/" href="#home" src="assets/img/portfolio-logo.png">
 
     <div class="links">
-        <a routerLink="/" style="color: #FA2759;" class="home" href="#home" routerLinkActive="active">HOME</a>
-        <a href="#about-me" routerLinkActive="active">ABOUT ME</a>
-        <a href="#portfolio" routerLinkActive="active">PORTFOLIO</a>
+        <a [class.linksActiv]="startColor" [style.color]="active!=1 ? 'white' : '#FA2759'" (click)="oK('1')" routerLink="/" href="#home" routerLinkActive="active">HOME</a>
+        <a [style.color]="active!=2 ? 'white' : '#FA2759'" (click)="oK('2')" href="#about-me" routerLinkActive="active">ABOUT ME</a>
+        <a [style.color]="active!=3 ? 'white' : '#FA2759'" (click)="oK('3')" href="#portfolio" routerLinkActive="active">PORTFOLIO</a>
     </div>
 
 
