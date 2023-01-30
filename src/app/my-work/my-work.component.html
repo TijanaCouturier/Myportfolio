@@ -19,8 +19,11 @@
 
                 <div (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false" class="projekt-info">
                     <span ng-bind-html="user | name | highlight:searchTerm" class="title" [hidden]="!isChangedBlock[i]">{{project['title']}}</span>
-                    <span class="hover-decription" [hidden]="!isChangedBlock[i]">{{project["description"]}}</span>
-                    <p>{{project["p"]}}</p>
+                    <div>
+                        <p class="hover-decription" [hidden]="!isChangedBlock[i]">{{project["description"]}}</p>
+                        <p>{{project["p"]}}</p>
+                    </div>
+
                     <div class="project-btn">
                         <button mat-stroked-button color="primary" (click)="openNewTab(i)" [hidden]="!isChangedBlock[i]">Try</button>
 

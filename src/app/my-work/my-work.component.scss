@@ -103,7 +103,7 @@
                 opacity: 1;
             }
             .title {
-                padding-top: 20px;
+                padding-top: 40px;
                 font-weight: 600;
                 font-size: 25px;
                 color: #FA2759;
@@ -111,7 +111,7 @@
                 justify-content: center;
                 // opacity: 0;
             }
-            .hover-decription {
+            /* .hover-decription {
                 padding-left: 20px;
                 padding-right: 20px;
                 font-size: 20px;
@@ -119,13 +119,15 @@
                 justify-content: center;
                 padding-top: 30px;
                 // min-height: 100px;
-            }
+            } */
             p {
-                padding-left: 20px;
+                padding-left: 50px;
                 padding-right: 20px;
+                padding-top: 10px;
                 font-size: 20px;
                 display: flex;
                 justify-content: center;
+                max-width: 420px;
             }
             button {
                 height: 50px;

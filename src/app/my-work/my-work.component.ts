@@ -19,7 +19,7 @@ export class MyWorkComponent implements OnInit {
   allProjectPictures = [
     {path: 'elpolloloco.png', tag: 'javascript',  title: 'El pollo loco', description: 'You decide who drinks', p: ''},
     {path: 'join.png', tag: 'javascript', title: 'Join', description: 'A Kanban board based on JavaScript and Bootstrap.', p: '  The board gives an overview over the current tasks in a project by showing the status, assignments and other informations.' }, 
-    {path: 'ringoffire.png', tag: 'angular', title: 'Ring of fire', description: 'The popular drinking game as multi-user-app based on Angular and Firebase.', p: 'By drawing cards in turns, the players get instruction on who should have a drink.'}, 
+    {path: 'Rof.jpeg', tag: 'angular', title: 'Ring of fire', description: 'The popular drinking game as multi-user-app based on Angular and Firebase.', p: 'By drawing cards in turns, the players get instruction on who should have a drink.'}, 
     {path: 'portfolio.jfif', tag: 'angular', title: 'Portfolio', description: 'This page was build whit Angular.', p: 'Get to know me and my projects.'}
   ];
 

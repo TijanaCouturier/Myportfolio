@@ -11,12 +11,12 @@ aboutMe = [
   {
     img: './assets/img/Portfolio-img/walk-line.png',
     title: 'MY JOURNEY BEGAN',
-    post: 'I come from Serbia',
+    post: 'My IT journey by coding small websites at home and watching other tutorials. So I decided to amplify my IT knowledge and gain experience in web development.',
   },
   {
     img: './assets/img/Portfolio-img/heart-line.png',
     title:  'FIRST EXPERIENCES',
-    post: 'In Februar 2022 began to study Developer Akademie in Munich',
+    post: 'In Februar 2022 began to study Developer Akademie in Munich.',
   },
   {
     img: './assets/img/Portfolio-img/search-line.png',
