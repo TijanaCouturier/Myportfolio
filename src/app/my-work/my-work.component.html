@@ -10,7 +10,7 @@
     </div>
 
 
-    <div class="projects">
+    <div class="projects padding-allProjects">
         <div class="projects-container" data-aos="fade-in" data-aos-offset="100" *ngFor="let picture, let project of getallProjectPictures() let i = index" (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false">
 
             <div class="projects-hover">
@@ -33,6 +33,8 @@
             </div>
         </div>
     </div>
+
+
 
 </div>
 

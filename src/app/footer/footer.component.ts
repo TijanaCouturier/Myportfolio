@@ -9,8 +9,6 @@ export class FooterComponent implements OnInit {
 
   images = [ 'github-fill.png', 'xing-fill.png'];
 
-
-
   footerLinks = [ 
    'https://github.com/TijanaCouturier',
    'https://www.xing.com/profile/Tijana_Couturier/cv',
@@ -22,8 +20,8 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openLink(t) {
-  window.open(this.footerLinks[t]);
+  openLink(f) {
+  window.open(this.footerLinks[f]);
   }
 
 }

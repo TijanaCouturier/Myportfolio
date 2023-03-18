@@ -11,10 +11,15 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+//import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
+import { MatInputModule} from '@angular/material/input';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { AllProjectsComponent } from './all-projects/all-projects.component';
 import {MatButtonModule} from '@angular/material/button';
+//import {FormControl, Validators} from '@angular/forms';
+//import { ErrorStateMatcher } from '@angular/material/core';
+
 
 
 @NgModule({
@@ -37,8 +42,14 @@ import {MatButtonModule} from '@angular/material/button';
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule, 
-   
-    
+    MatInputModule,
+   // FormControl,
+    //Validators
+   // ErrorStateMatcher,
+   // FormControl,
+   // FormGroupDirective,
+   // NgForm,
+  //  Validators
   ],
   providers: [],
   bootstrap: [AppComponent]

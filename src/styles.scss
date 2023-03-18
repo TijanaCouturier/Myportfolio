@@ -1,5 +1,7 @@
+@import './models/fonts.css';
 body,
 html {
+    font-family: 'Lato', sans-serif;
     margin: 0;
     background-color: black;
     box-sizing: border-box;
@@ -25,12 +27,37 @@ html {
     }
 }
 
-.d-none {
-    display: none;
+.padding-allProjects {
+    padding-left: 300px;
+    padding-right: 300px;
+    @media (max-width: 1250px) {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    @media (max-width: 900px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    @media (max-width: 480px) {
+        padding-left: 0;
+        padding-right: 0px;
+    }
 }
 
 .btnActiv {
     background-color: #FA2759 !important;
+}
+
+@media (max-width: 900px) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
+@media (min-width: 900px) {
+    .hide-desktop {
+        display: none !important;
+    }
 }
 
 

@@ -22,7 +22,7 @@ export class ContactComponent implements OnInit {
  
  names1: string = '';
  names2: string = '';
- names3: string = '';
+ names3: string = ''; 
 
   constructor() { }
 
@@ -42,7 +42,7 @@ export class ContactComponent implements OnInit {
       messageField.disabled = true;
       emailField.disabled = true;
       sendButton.disabled = true;
-      //chnage color to disabled
+      //chanage color to disabled
 
     //Animation anzeigen
     let fd = new FormData();
@@ -56,9 +56,23 @@ export class ContactComponent implements OnInit {
     await fetch('http://tijana-couturier.developerakademie.net/send_mail/send_mail.php',
     {
      method : 'POST',
-     body: fd
+     body: fd,
+     mode: 'no-cors'
     }
     );
+
+    window.location.reload();
+    
+
+  }
+
+}
+
+
+
+/*
+
+
    //Text anzeigen: Nachricht gesendet.
     nameField.disabled = false;
     messageField.disabled = false;
@@ -71,6 +85,5 @@ export class ContactComponent implements OnInit {
     emailField.value = '';
 
 
-  }
 
-}
+*/

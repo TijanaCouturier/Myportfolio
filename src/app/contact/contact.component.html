@@ -6,15 +6,74 @@
 
         <input [(ngModel)]="names1" [ngModelOptions]="{standalone: true}" matInput required type="text" name="name" #nameField placeholder="Enter your name *">
 
-        <input [(ngModel)]="names2" [ngModelOptions]="{standalone: true}" matInput required type="text" email="email" #emailField placeholder="Enter your Email address *">
+        <input pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" [(ngModel)]="names2" [ngModelOptions]="{standalone: true}" matInput email="email" #emailField placeholder="Enter your Email address *" aria-required="true">
 
-        <input [(ngModel)]="names3" [ngModelOptions]="{standalone: true}" matInput required type="text" message="message" #messageField class="message" placeholder="Enter your message *">
+        <input [(ngModel)]="names3" [ngModelOptions]="{standalone: true}" matInput required type="text" message="message" #messageField class="message" placeholder="Enter your message *" required>
 
         <button [disabled]="names1.length == 0 || names2.length == 0 || names3.length == 0" #sendButton mat-stroked-button color="primary">Send</button>
 
     </form>
 
+    <!--
 
+ 
+<input _ngcontent-tom-c38="" matinput="" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required="" ngmodel="" name="email" class="mat-input-element mat-form-field-autofill-control ng-tns-c35-2 cdk-text-field-autofill-monitored ng-dirty ng-touched ng-invalid" id="mat-input-1" aria-required="true" aria-describedby="mat-error-3">
+
+
+
+<input [(ngModel)]="inputName" [ngModelOptions]="{standalone: true}" matInput required type="text" name="name" #nameField placeholder="Enter your name *">
+
+        <input [(ngModel)]="inputEmail" [ngModelOptions]="{standalone: true}" matInput required type="text" email="email" #emailField placeholder="Enter your Email address *">
+
+        <input [(ngModel)]="inputMessage" [ngModelOptions]="{standalone: true}" matInput required type="text" message="message" #messageField class="message" placeholder="Enter your message *">
+
+        <button #sendButton mat-stroked-button color="primary">Send</button>
+
+
+<div class="example-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Enter your email</mat-label>
+
+    <input matInput placeholder="pat@example.com" [formControl]="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+</div>
+
+
+
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+      Please enter a valid email address
+    </mat-error>
+    <mat-error *ngIf="emailFormControl.hasError('required')">
+      Email is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+</form>
+
+
+
+
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                 placeholder="Ex. pat@example.com">
+          <mat-hint>Errors appear instantly!</mat-hint>
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </form>
+
+     -->
 
 
 

@@ -1,15 +1,18 @@
 <div id="about-me" class="about-me">
-    <div class="about-me-header">
-        <div>
-            <img src="assets/img/profil-img.jfif">
-        </div>
-        <div class="about-me-text">
-            <h1 data-aos="fade-right" data-aos-easing="ease-out-cubis">About me.</h1>
-            <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">"I'm fascinated by digitization and a front end developer who wants to make the world more beautiful."</p>
+
+    <div class="about-me-header padding-allProjects">
+        <div class="about-div">
+            <div>
+                <img src="assets/img/profil-img.jfif">
+            </div>
+            <div class="about-me-text">
+                <h1 data-aos="fade-right" data-aos-easing="ease-out-cubis">About me.</h1>
+                <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">"I'm a frontend developer, with a passion for structuring problems, especially simple and complex web apps, and always enjoy learning new things." </p>
+            </div>
         </div>
     </div>
 
-    <div class="aboutPost">
+    <div class="aboutPost padding-allProjects">
         <div data-aos="fade-right" data-aos-easing="ease-out-cubis" *ngFor="let about of aboutMe; let i = index" class="journey">
             <div class="img-circle">
                 <img src="{{ about.img }}">
