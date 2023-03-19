@@ -18,15 +18,13 @@ export class MyWorkComponent implements OnInit {
     {path: 'join.png', tag: 'javascript', title: 'Join', description: 'A Kanban board based on JavaScript and Bootstrap.', p: '  The board gives an overview over the current tasks in a project by showing the status, assignments and other informations.' }, 
     {path: 'portfolio.jfif', tag: 'angular', title: 'Portfolio', description: 'This page was build with Angular.', p: 'Get to know me and my projects.'},
     {path: 'RingOfFire.jpeg', tag: 'angular', title: 'Ring of fire', description: 'The popular drinking game as multi-user-app based on Angular and Firebase.', p: 'By drawing cards in turns, the players get instruction on who should have a drink.'}
-  
   ];
 
   projectsLinks = [
       'https://tijana-couturier.developerakademie.net/El%20polo%20loco/index.html',
-      'https://tijana-couturier.developerakademie.net/join_backup4.9.2022/Join/login.html',
-      'https://tijana-couturier.developerakademie.net/myportfolio',
+      'https://tijana-couturier.developerakademie.net/Join/login.html',
+      'https://tijana-couturier.developerakademie.net/myportfolio/',
       'https://ring-of-fire-243e7.web.app/'
-
   ];
 
   constructor() { }
@@ -50,31 +48,10 @@ export class MyWorkComponent implements OnInit {
     if (this.t == t){
       this.t = 0;
       this.searchparam = 'all';
-     
     }
     else {
       this.t = t;
       this.startColor = false;
     }
   }
-
 }
-
-
-
-/*
-
-  allProjectPictures = [
-    {path: 'elpolloloco.png', tag: 'javascript'},
-    {path: 'join.png', tag: 'javascript'}, 
-    {path: 'ringoffire.png', tag: 'angular'}, 
-    {path: 'portfolio.jfif', tag: 'angular'}
-  ];
-
-  descriptions = [
-    { title: 'El pollo loco', description: 'You decide who drinks', p: '', tag : 'javascript'},
-    { title: 'Join', description: 'A Kanban board based on JavaScript and Bootstrap.', p: '  The board gives an overview over the current tasks in a project by showing the status, assignments and other informations.' , tag : 'javascript' },
-    { title: 'Ring of fire', description: 'The popular drinking game as multi-user-app based on Angular and Firebase.', p: 'By drawing cards in turns, the players get instruction on who should have a drink.', tag : 'angular'},
-    { title: 'Portfolio', description: 'This page was build whit Angular.', p: 'Get to know me and my projects.', tag : 'angular'}
-  ];
-  */

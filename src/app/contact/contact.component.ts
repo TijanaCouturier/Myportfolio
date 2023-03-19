@@ -14,7 +14,6 @@ export class ContactComponent implements OnInit {
  @ViewChild('emailField') emailField!: ElementRef;
  @ViewChild('sendButton') sendButton: MatButton;
  
-
  inputName: string = '';
  inputEmail: string = '';
  inputMessage: string = '';
@@ -36,15 +35,10 @@ export class ContactComponent implements OnInit {
     let messageField = this.messageField.nativeElement;
     let emailField = this.emailField.nativeElement;
     let sendButton = this.sendButton._elementRef.nativeElement;
-    
- 
       nameField.disabled = true;
       messageField.disabled = true;
       emailField.disabled = true;
       sendButton.disabled = true;
-      //chanage color to disabled
-
-    //Animation anzeigen
     let fd = new FormData();
     fd.append('name', nameField.value);
     fd.append('message', messageField.value);
@@ -52,7 +46,7 @@ export class ContactComponent implements OnInit {
 
     this.send = !this.send;
 
-    //senden
+    //send
     await fetch('http://tijana-couturier.developerakademie.net/send_mail/send_mail.php',
     {
      method : 'POST',
@@ -62,28 +56,5 @@ export class ContactComponent implements OnInit {
     );
 
     window.location.reload();
-    
-
   }
-
 }
-
-
-
-/*
-
-
-   //Text anzeigen: Nachricht gesendet.
-    nameField.disabled = false;
-    messageField.disabled = false;
-    emailField.disabled = false;
-    sendButton.disabled = true;
-    //change color to enabled
-    
-    nameField.value = '';
-    messageField.value = '';
-    emailField.value = '';
-
-
-
-*/

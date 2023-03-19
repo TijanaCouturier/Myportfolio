@@ -16,7 +16,7 @@ aboutMe = [
   {
     img: './assets/img/Portfolio-img/heart-line.png',
     title:  'FIRST EXPERIENCES',
-    post: 'In Februar 2022 began to study Developer Akademie in Munich.',
+    post: 'In Februar 2022, I began to study Developer Akademie in Munich.',
   },
   {
     img: './assets/img/Portfolio-img/search-line.png',
@@ -28,9 +28,8 @@ aboutMe = [
     title: 'NEW CHALLENGES',
     post:  'Now I am eager to apply my experience with JavaScript, HTML/CSS, and Angular as a junior developer.'
   }
-
 ];
- 
+
   constructor() { }
 
   ngOnInit(): void {

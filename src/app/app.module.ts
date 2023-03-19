@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -11,16 +10,14 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-//import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
 import { MatInputModule} from '@angular/material/input';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { AllProjectsComponent } from './all-projects/all-projects.component';
 import {MatButtonModule} from '@angular/material/button';
-//import {FormControl, Validators} from '@angular/forms';
-//import { ErrorStateMatcher } from '@angular/material/core';
-
-
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -39,17 +36,13 @@ import {MatButtonModule} from '@angular/material/button';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule, 
     MatInputModule,
-   // FormControl,
-    //Validators
-   // ErrorStateMatcher,
-   // FormControl,
-   // FormGroupDirective,
-   // NgForm,
-  //  Validators
+    MatMenuModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

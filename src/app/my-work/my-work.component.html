@@ -3,19 +3,14 @@
 
     <div class="btn">
         <button [class.btnActiv]="startColor" mat-stroked-button color="primary" [style.background-color]="t!=1 ? 'black' : '#FA2759'" #all (click)="setSearchParam('all', '1')" class="btn-left-right left">All</button>
-
         <button mat-stroked-button color="primary" [style.background-color]="t!=2 ? 'black' : '#FA2759'" #angular (click)="setSearchParam('angular', '2')" class="btn-mit">Angular</button>
-
         <button mat-stroked-button color="primary" [style.background-color]="t!=3 ? 'black' : '#FA2759'" #javascript (click)="setSearchParam('javascript', '3')" class="btn-left-right">Java Script</button>
     </div>
 
-
     <div class="projects padding-allProjects">
         <div class="projects-container" data-aos="fade-in" data-aos-offset="100" *ngFor="let picture, let project of getallProjectPictures() let i = index" (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false">
-
             <div class="projects-hover">
                 <img src="assets/img/{{ picture['path'] }}">
-
 
                 <div (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false" class="projekt-info">
                     <span ng-bind-html="user | name | highlight:searchTerm" class="title" [hidden]="!isChangedBlock[i]">{{project['title']}}</span>
@@ -26,228 +21,9 @@
 
                     <div class="project-btn">
                         <button mat-stroked-button color="primary" (click)="openNewTab(i)" [hidden]="!isChangedBlock[i]">Try</button>
-
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
-
-
-
-</div>
-
-
-
-
-<!--
- <div class="projects">
-        <div class="projects-container">
-
-            <img (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false" *ngFor="let picture of getallProjectPictures() let i = index" data-aos="fade-in" data-aos-offset="100" src="assets/img/{{ picture['path'] }}">
-
-            <div class="projects-hover">
-                <div (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false" *ngFor="let project of getallDescriptions(); let i = index" class="projekt-info">
-                    <span ng-bind-html="user | name | highlight:searchTerm" class="title" [hidden]="!isChangedBlock[i]">{{project['title']}}</span>
-                    <span class="hover-decription" [hidden]="!isChangedBlock[i]">{{project["description"]}}</span>
-                    <p>{{project["p"]}}</p>
-                    <div class="project-btn">
-                        <button mat-stroked-button color="primary" (click)="openNewTab(i)" [hidden]="!isChangedBlock[i]">Try</button>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="projects">
-    <div class="projects-container">
-
-
-        <img (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false" *ngFor="let picture of allProjectPictures; let i = index" data-aos="fade-in" data-aos-offset="100" src="assets/img/{{ picture }}">
-
-        <div class="projects-hover">
-            <div (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false" *ngFor="let project of descriptions; let i = index" class="projekt-info">
-                <span ng-bind-html="user | name | highlight:searchTerm" class="title" [hidden]="!isChangedBlock[i]">{{project['title']}}</span>
-                <span class="hover-decription" [hidden]="!isChangedBlock[i]">{{project["description"]}}</span>
-                <div class="project-btn">
-                    <button (click)="openNewTab()" [hidden]="!isChangedBlock[i]">Try</button>
-
-                </div>
-            </div>
-
-        </div>
-
     </div>
 </div>
-
-</div>
-
--->
-
-
-
-
-
-<!--
-
-
-        <div class="projects">
-        <div class="projects-container">
-
-            <img (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false" *ngFor="let picture of allProjectPictures; let i = index" data-aos="fade-in" data-aos-offset="100" src="assets/img/{{ picture }}">
-
-            <div class="projects-hover">
-                <div *ngFor="let project of descriptions; let i = index" class="projekt-info">
-                    <h2 [hidden]="!isChangedBlock[i]">{{project['title']}}</h2>
-                    <p [hidden]="!isChangedBlock[i]">{{project["description"]}}</p>
-                    <div class="project-btn">
-                        <button [hidden]="isChangedBlock[i]">Try</button>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-
-     <div class="projects">
-        <div class="projects-container">
-            <div (mouseover)="isChangedBlock[picture] = true" , (mouseout)="isChangedBlock[picture] = false" , data-aos="fade-in" data-aos-offset="100" *ngFor="let picture of allProjectPictures">
-                <img [hidden]="isChangedBlock[picture]" src="assets/img/{{ picture }}">
-            </div>
-            <div class="projects-hover">
-                <div *ngFor="let project of descriptions; let i = index" class="projekt-info">
-                    <h2>{{project['title']}}</h2>
-                    <p>{{project["description"]}}</p>
-                    <div class="project-btn">
-                        <button>Try</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-
-<div class="projects">
-        <div class="projects-container">
-            <div (mouseover)="isChangedBlock = {};" (mouseout)="isChangedBlock = {};" data-aos="fade-in" data-aos-offset="100" *ngFor="let picture of allProjectPictures">
-                <img src="assets/img/{{ picture }}">
-            </div>
-            <div class="projects-hover">
-                <div *ngFor="let project of descriptions; let i = index" class="projekt-info">
-                    <h2>{{project['title']}}</h2>
-                    <p>{{project["description"]}}</p>
-                    <div class="project-btn">
-                        <button>Try</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-
-       <div class="projects">
-        <div class="projects-container">
-            <div (mouseover)="isChangedBlock[picture] = true" (mouseout)="isChangedBlock[picture] = false" data-aos="fade-in" data-aos-offset="100" *ngFor="let picture of allProjectPictures">
-                <img [hidden]="isChangedBlock[picture]" src="assets/img/{{ picture }}">
-            </div>
-            <div class="projects-hover">
-                <div (mouseover)="isChangedBlock[i] = true" (mouseout)="isChangedBlock[i] = false" *ngFor="let project of descriptions; let i = index" class="projekt-info">
-                    <h2 [hidden]="isChangedBlock[i]">{{project['title']}}</h2>
-                    <p [hidden]="isChangedBlock[i]">{{project["description"]}}</p>
-                    <div class="project-btn">
-                        <button [hidden]="isChangedBlock[i]">Try</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
--->
-
-
-
-
-<!--
-    <input type="text" ng-model="searchTerm"/>
-<ul>
-  <li ng-repeat="name in names | filter:searchTerm">{{ name }} </li>
-</ul>
-
-oder
-
-<input type="text" ng-model="languageFilter"/>
-<ul>
-  <li ng-repeat="language in programmingLanguages | filter:languageFilter">
-    <span ng-bind-html="language | highlight:languageFilter"></span>
-  </li>
-</ul>
-
-
-oder
-<td ng-bind-html="user | name | highlight:searchTerm"></td>
-<body ng-controller="userTableController">
-  <input type="text" ng-model="searchTerm" />
-  <table class="table">
-    <thead>
-      <tr>
-        <th></th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Address</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr ng-repeat="user in users | filter:searchTerm">
-        <td>
-          <img class="user-thumb" src="{{user.user.picture.thumbnail}}" />
-        </td>
-        <td ng-bind-html="user | name | highlight:searchTerm"></td>
-        <td ng-bind-html="user | email | highlight:searchTerm"></td>
-        <td><small ng-bind-html="user | address | highlight:searchTerm"></small></td>
-      </tr>
-    </tbody>
-  </table>
-</body>
--->

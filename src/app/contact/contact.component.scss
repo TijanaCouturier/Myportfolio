@@ -59,7 +59,6 @@
         border: 0;
         padding: 20px;
         min-width: 675px;
-        //  min-width: 35%;
         font-size: 20px;
         outline-color: rgb(30, 166, 142);
         color: white;
@@ -91,10 +90,7 @@
         button {
             background-color: #2DFCD8;
             color: black;
-            // height: 50px;
-            // width: 150px;
             font-size: 18px;
-            // margin-left: 530px;
             margin-top: 40px;
             margin-bottom: 55px;
             cursor: pointer;
@@ -102,48 +98,32 @@
             &:hover {
                 background-color: #2DFCD8;
             }
-            // width: 30vw;
-            // height: auto;
-            // align-self: flex-end;
-            // text-align: center;
             @media (max-width: 900px) {
-                //  margin-left: 490px;
                 padding: 15px 300px;
             }
             @media (max-width: 755px) {
-                //  margin-left: 390px;
                 padding: 15px 250px;
             }
             @media (max-width: 575px) {
-                //margin-left: 350px;
                 padding: 15px 210px;
             }
             @media (max-width: 505px) {
-                //  margin-left: 170px;
                 font-size: 16px;
                 padding: 15px 190px;
             }
             @media (max-width: 490px) {
-                //  margin-left: 170px;
                 font-size: 16px;
                 padding: 15px 160px;
             }
             @media (max-width: 390px) {
-                //  margin-left: 170px;
                 font-size: 16px;
                 padding: 15px 140px;
             }
-            //ausgefüllt:
-            //  border: solid 2px rgb(45, 252, 216);
-            //   color: rgb(45, 252, 216);
-            //   cursor: pointer;
         }
         button:disabled {
             background-color: black;
             border: 2px solid #2dfcd964;
             color: #2dfcd964;
-            /* cursor: unset;
-             */
             &:hover {
                 background-color: #2DFCD8;
                 color: black;

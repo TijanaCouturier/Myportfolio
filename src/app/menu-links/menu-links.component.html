@@ -7,66 +7,18 @@
         <a href="#portfolio" routerLinkActive="active">PORTFOLIO</a>
     </div>
 
-
-    <div id="openSidebarMenu" class="menu hide-desktop">
-        <img (click)="showMenu()" src="assets/img/menu.png">
+    <div class="menu hide-desktop">
+        <img (click)="openMenu()" src="assets/img/menu.png">
     </div>
 
-
-    <div id="menu" class="overlay-menu hide-desktop">
-        <div href="#openSidebarMenu" class="links-mobil">
+    <div *ngIf="mobile" [class.show-overlay-menu]="!isClicked" class="overlay-menu hide-desktop">
+        <div routerLink="/" href="#home" routerLinkActive="active">
+            <mat-icon (click)="closeMenu()" class="close">close</mat-icon>
+        </div>
+        <div class="links-mobil">
             <a href="#home">HOME</a>
             <a href="#about-me">ABOUT ME</a>
             <a href="#portfolio">PORTFOLIO</a>
         </div>
-
-        <div routerLink="/" href="#home" routerLinkActive="active">
-            <img src="assets/img/x-icon.png" (click)="closeMenu()" class="close">
-        </div>
-
     </div>
-
-
-
 </header>
-
-
-
-
-<!--
-
-        <div class="links hide-mobile">
-        <a [style.color]="active!=1 ? 'white' : '#FA2759'" (click)="oK('1')" [class.linksActiv]="startColor" routerLink="/" href="#home" routerLinkActive="active">HOME</a>
-        <a [style.color]="active!=2 ? 'white' : '#FA2759'" (click)="oK('2')" href="#about-me" routerLinkActive="active">ABOUT ME</a>
-        <a [style.color]="active!=3 ? 'white' : '#FA2759'" (click)="oK('3')" href="#portfolio" routerLinkActive="active">PORTFOLIO</a>
-    </div>
-
-
-
-        <img (click)="showMenu()" class="menu" src="list.png">
-
-    <div id="menu" class="overlay-menu">
-        <a href="#home">HOME</a>
-        <a href="#about-me">ABOUT ME</a>
-        <a href="#portfolio">PORTFOLIO/a>
-        
-
-        <button (click)="closeMenu()" class="close-button">Close</button>
-
-    </div>
-
-    <div class="d-none" id="sidebarMenu">
-       <ul>
-            <li>
-                <a href="#home">HOME</a>
-            </li>
-            <li>
-                <a href="about-me">ABOUT ME</a>
-            </li>
-            <li>
-                <a href="#portfolio">PORTFOLIO</a>
-            </li>
-        </ul>
-    </div>
-         
-    -->

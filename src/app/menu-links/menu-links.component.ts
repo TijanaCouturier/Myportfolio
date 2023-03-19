@@ -7,8 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MenuLinksComponent implements OnInit {
 
-
   @Input() startColor = true;
+  public isClicked: boolean = true;
+  public mobile: boolean = true;
   active = 0;
 
   constructor() { }
@@ -16,23 +17,23 @@ export class MenuLinksComponent implements OnInit {
   ngOnInit(): void {
   
   }
+  public openMenu() {
+    this.isClicked = false;
+  }
 
-  showMenu(){
-   document.getElementById('menu').classList.add('show-overlay-menu');
+  
+  public closeMenu() {
+    this.isClicked = true;
   }
-  closeMenu(){
-    document.getElementById('menu').classList.remove('show-overlay-menu');
-  }
+
 
   oK(active){
     if (this.active == active){
       this.active = 0;
-
     }
     else {
       this.active = active;
       this.startColor = false;
     }
-    
   }
 }
