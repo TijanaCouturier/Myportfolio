@@ -27,6 +27,14 @@ export class MyWorkComponent implements OnInit {
       'https://ring-of-fire-243e7.web.app/'
   ];
 
+  gitLinks = [
+    'https://github.com/TijanaCouturier/El-pollo-loco',
+    'https://github.com/TijanaCouturier/Join',
+    'https://github.com/TijanaCouturier/Myportfolio',
+    'https://github.com/TijanaCouturier/RingOfFire'
+  ];
+
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -40,6 +48,11 @@ export class MyWorkComponent implements OnInit {
 
   openNewTab(y) {
     window.open(this.projectsLinks[y]);
+  }
+
+
+  openGitLink(g){
+    window.open(this.gitLinks[g]);
   }
 
 

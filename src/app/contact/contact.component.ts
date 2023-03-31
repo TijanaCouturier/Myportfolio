@@ -47,7 +47,7 @@ export class ContactComponent implements OnInit {
     this.send = !this.send;
 
     //send
-    await fetch('http://tijana-couturier.developerakademie.net/send_mail/send_mail.php',
+    await fetch('https://tijana-couturier.developerakademie.net/send_mail/send_mail.php',
     {
      method : 'POST',
      body: fd,

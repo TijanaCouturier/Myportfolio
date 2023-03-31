@@ -1,16 +1,32 @@
 .impressum-container {
     color: white;
-    width: 100vw;
-    max-width: 100%;
-    min-height: 70%;
-    padding-top: 180px;
+    // width: 100vw;
+    //max-width: 100%;
+    // min-height: 70%;
+    // padding-top: 180px;
+    @media (max-width: 480px) {
+        padding-left: 30px;
+    }
     h1 {
-        font-size: 64px;
-        padding-left: 300px;
+        font-size: 60px;
+        padding-left: 100px;
+        @media (max-width: 1200px) {
+            font-size: 55px;
+        }
+        @media (max-width: 900px) {
+            padding-left: 50px;
+        }
+        @media (max-width: 480px) {
+            padding-left: 0;
+            font-size: 36px;
+        }
     }
     .date {
-        font-size: 20px;
-        padding-top: 40px;
+        font-size: 18px;
+        // padding-top: 40px;
         padding-bottom: 50px;
+        @media (max-width: 480px) {
+            font-size: 16px;
+        }
     }
 }

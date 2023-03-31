@@ -1,15 +1,15 @@
 .my-work {
-    max-width: 100%;
-    width: 100vw;
+    //    max-width: 100%;
+    // width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h1 {
         color: white;
-        font-size: 64px;
+        font-size: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
-        @media (max-width: 900px) {
-            font-size: 55px;
-        }
         @media (max-width: 575px) {
             font-size: 48px;
         }
@@ -40,6 +40,7 @@
             @media (max-width: 440px) {
                 font-size: 14px;
                 min-width: 90px;
+                padding: 5px;
             }
         }
     }
@@ -47,8 +48,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: var(--space-m);
+        //  gap: var(--space-m);
         margin-top: 30px;
+        max-width: 1200px;
         @media (max-width: 1020px) {
             padding-left: 0;
             padding-right: 0;
@@ -56,14 +58,14 @@
         img {
             object-fit: contain;
             max-width: 100%;
-            width: 550px;
+            width: 450px;
             display: block;
-            @media (max-width: 650px) {
-                width: 700px;
+            @media (max-width: 1200px) {
+                width: 400px;
             }
         }
         .projects-container {
-            padding: 80px;
+            padding: 30px;
             @media (max-width: 1020px) {
                 padding: 50px;
             }
@@ -90,44 +92,66 @@
                 opacity: 1;
             }
             .title {
-                padding-top: 40px;
+                padding-top: 20px;
                 font-weight: 900;
                 font-size: 25px;
                 color: #FA2759;
                 display: flex;
                 justify-content: center;
+                @media (max-width: 900px) {
+                    padding-top: 20px;
+                    font-size: 20px;
+                }
                 @media (max-width: 520px) {
                     padding-top: 20px;
                     font-size: 18px;
+                }
+                @media (max-width: 400px) {
+                    padding-top: 15px;
                 }
             }
             p {
                 padding-left: 50px;
                 padding-right: 20px;
-                font-size: 22px;
+                font-size: 18px;
                 display: flex;
                 justify-content: center;
                 max-width: 420px;
-                @media (max-width: 650px) {
+                @media (max-width: 1200px) {
                     font-size: 17px;
                 }
+                @media (max-width: 650px) {
+                    font-size: 16px;
+                }
                 @media (max-width: 480px) {
-                    font-size: 14px;
+                    font-size: 17px;
                     padding-left: 10px;
                     padding-right: 10px;
+                }
+                @media (max-width: 480px) {
+                    font-size: 15px;
                 }
             }
             button {
                 height: 50px;
-                width: 150px;
+                width: 120px;
+                // width: 150px;
                 color: #FA2759;
                 border: solid 2px #FA2759;
                 font-size: 18px;
                 position: absolute;
-                bottom: 40px;
+                bottom: 20px;
+                right: 50px;
                 &:hover {
                     background-color: #FA2759;
                     color: white;
+                }
+                @media (max-width: 1200px) {
+                    height: 45px;
+                }
+                @media (max-width: 900px) {
+                    height: 40px;
+                    width: 100px;
                 }
                 @media (max-width: 575px) {
                     bottom: 30px;
@@ -143,8 +167,12 @@
             }
             .project-btn {
                 display: flex;
-                justify-content: center;
+                //justify-content: center;
             }
         }
+    }
+    .git {
+        position: absolute;
+        left: 50px;
     }
 }

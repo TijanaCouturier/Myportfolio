@@ -11,7 +11,7 @@ export class MySkillsComponent implements OnInit {
   skills = [
     {
       img: './assets/img/Portfolio-img/java script.png',
-      title: 'Java Script',
+      title: 'JavaScript',
     },
     {
       img: './assets/img/Portfolio-img/angular.png',

@@ -1,7 +1,10 @@
 .contact {
-    margin-top: 100px;
-    width: 100vw;
-    max-width: 100%;
+    //  margin-top: 30px;
+    // width: 100vw;
+    // max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     a {
         color: #2DFCD8;
         text-decoration: none;
@@ -10,24 +13,20 @@
     }
     h1 {
         color: #2DFCD8;
-        font-size: 64px;
+        font-size: 50px;
         display: flex;
         justify-content: center;
-        padding-right: 375px;
-        @media (max-width: 900px) {
-            font-size: 55px;
-            padding-right: 350px;
-        }
+        padding-right: 450px;
         @media (max-width: 755px) {
-            padding-right: 270px;
+            padding-right: 260px;
         }
         @media (max-width: 575px) {
             padding-right: 200px;
             font-size: 48px;
         }
         @media (max-width: 480px) {
-            padding-right: 115px;
-            font-size: 40px;
+            padding-right: 85px;
+            font-size: 35px;
         }
     }
     h5 {
@@ -42,27 +41,34 @@
         @media (max-width: 900px) {
             font-size: 20px;
         }
-        @media (max-width: 755px) {
-            font-size: 15px;
+        @media (max-width: 760px) {
+            font-size: 17px;
         }
-        @media (max-width: 520px) {
+        @media (max-width: 580px) {
             font-size: 14px;
         }
         @media (max-width: 480px) {
+            font-size: 14px;
             display: block;
             padding-left: 10px;
             padding-right: 10px;
+            width: 80%;
         }
     }
     input {
         background-color: rgb(26, 26, 26);
         border: 0;
-        padding: 20px;
+        padding: 15px;
         min-width: 675px;
-        font-size: 20px;
-        outline-color: rgb(30, 166, 142);
+        font-size: 18px;
+        // outline-color: rgb(30, 166, 142);
         color: white;
         margin-top: 50px;
+        &:focus {
+            outline: none !important;
+            border: 1px solid #2DFCD8;
+            box-shadow: 0 0 8px #32ffdd;
+        }
         @media (max-width: 900px) {
             min-width: 600px;
         }
@@ -79,13 +85,14 @@
         min-height: 150px;
     }
     .form {
-        padding-top: 50px;
+        //  padding-top: 50px;
         padding-bottom: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
         @media (max-width: 575px) {
             padding-top: 20px;
+            width: 85%;
         }
         button {
             background-color: #2DFCD8;
@@ -93,31 +100,14 @@
             font-size: 18px;
             margin-top: 40px;
             margin-bottom: 55px;
+            margin-left: calc(100% - 157px);
             cursor: pointer;
-            padding: 20px 330px;
+            padding: 10px 55px;
             &:hover {
                 background-color: #2DFCD8;
             }
-            @media (max-width: 900px) {
-                padding: 15px 300px;
-            }
-            @media (max-width: 755px) {
-                padding: 15px 250px;
-            }
             @media (max-width: 575px) {
-                padding: 15px 210px;
-            }
-            @media (max-width: 505px) {
-                font-size: 16px;
-                padding: 15px 190px;
-            }
-            @media (max-width: 490px) {
-                font-size: 16px;
-                padding: 15px 160px;
-            }
-            @media (max-width: 390px) {
-                font-size: 16px;
-                padding: 15px 140px;
+                padding: 5px 35px;
             }
         }
         button:disabled {

@@ -6,7 +6,6 @@
     </div>
 
     <div class="footer-links">
-        <img routerLinkActive="active" routerLink="/" href="#home" src="assets/img/portfolio-logo.png">
         <img (click)="openLink(i)" *ngFor="let img of images; let i = index" src="assets/img/Portfolio-img/{{img}}">
     </div>
 </div>

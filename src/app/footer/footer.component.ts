@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  images = [ 'github-fill.png', 'xing-fill.png'];
+  images = [ 'linkedin-icon.png', 'github-fill.png', 'xing-fill.png'];
 
   footerLinks = [ 
+    'https://www.linkedin.com/in/tijana-couturier-36827426b/',
    'https://github.com/TijanaCouturier',
-   'https://www.xing.com/profile/Tijana_Couturier/cv',
-  
+   'https://www.xing.com/profile/Tijana_Couturier/cv'
   ];
 
   constructor() { }

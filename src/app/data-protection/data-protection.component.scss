@@ -1,12 +1,33 @@
 .text-data-guidelines {
     padding-bottom: 50px;
-    padding-top: 50px;
+    //  padding-top: 50px;
     color: white;
+    @media (max-width: 480px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .text-data-guidelines h1 {
     text-align: left!important;
-    font-size: 64px;
+    font-size: 60px;
+    @media (max-width: 1200px) {
+        font-size: 55px;
+    }
+    @media (max-width: 650px) {
+        font-size: 40px;
+    }
+    @media (max-width: 480px) {
+        font-size: 34px;
+    }
+    @media (max-width: 400px) {
+        font-size: 30px;
+    }
+}
+
+ul {
+    padding-inline-start: 20px;
+    min-width: 295px;
 }
 
 .text-data-guidelines h2 {
@@ -25,8 +46,4 @@
 .text {
     font-weight: 700;
     padding-left: 10px;
-}
-
-.info {
-    padding-top: 150px;
 }
