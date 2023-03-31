@@ -17,6 +17,8 @@ export class MenuLinksComponent implements OnInit {
   ngOnInit(): void {
   
   }
+
+  
   public openMenu() {
     this.isClicked = false;
   }

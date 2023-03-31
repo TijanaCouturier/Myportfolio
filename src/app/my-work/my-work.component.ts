@@ -20,6 +20,7 @@ export class MyWorkComponent implements OnInit {
     {path: 'RingOfFire.jpeg', tag: 'angular', title: 'Ring of fire', description: 'The popular drinking game as multi-user-app based on Angular and Firebase.', p: 'By drawing cards in turns, the players get instruction on who should have a drink.'}
   ];
 
+
   projectsLinks = [
       'https://tijana-couturier.developerakademie.net/El%20polo%20loco/index.html',
       'https://tijana-couturier.developerakademie.net/Join/login.html',
@@ -27,6 +28,7 @@ export class MyWorkComponent implements OnInit {
       'https://ring-of-fire-243e7.web.app/'
   ];
 
+  
   gitLinks = [
     'https://github.com/TijanaCouturier/El-pollo-loco',
     'https://github.com/TijanaCouturier/Join',
