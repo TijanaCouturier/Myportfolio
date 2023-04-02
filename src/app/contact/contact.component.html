@@ -4,6 +4,21 @@
 
     <form (submit)="sendMail()" ngNativeValidate #myForm class="form">
 
+        <input matInput required type="text" name="name" #nameField placeholder="Enter your name *">
+
+        <input pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" matInput email="email" #emailField placeholder="Enter your Email address *" required>
+
+        <input matInput required type="text" message="message" #messageField class="message" placeholder="Enter your message *" required>
+
+        <button #sendButton mat-stroked-button color="primary">Send</button>
+
+    </form>
+</div>
+
+<!--
+    
+    <form (submit)="sendMail()" ngNativeValidate #myForm class="form">
+
         <input [(ngModel)]="names1" [ngModelOptions]="{standalone: true}" matInput required type="text" name="name" #nameField placeholder="Enter your name *">
 
         <input pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" [(ngModel)]="names2" [ngModelOptions]="{standalone: true}" matInput email="email" #emailField placeholder="Enter your Email address *" aria-required="true">
@@ -13,4 +28,4 @@
         <button [disabled]="names1.length == 0 || names2.length == 0 || names3.length == 0" #sendButton mat-stroked-button color="primary">Send</button>
 
     </form>
-</div>
+-->
