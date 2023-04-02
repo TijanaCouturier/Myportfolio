@@ -107,14 +107,5 @@
                 padding: 5px 35px;
             }
         }
-        button:disabled {
-            background-color: black;
-            border: 2px solid #2dfcd964;
-            color: #2dfcd964;
-            &:hover {
-                background-color: #2DFCD8;
-                color: black;
-            }
-        }
     }
 }
