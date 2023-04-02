@@ -1,6 +1,4 @@
 .my-work {
-    //    max-width: 100%;
-    // width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +46,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        //  gap: var(--space-m);
         margin-top: 30px;
         max-width: 1200px;
         @media (max-width: 1020px) {
@@ -135,7 +132,6 @@
             button {
                 height: 50px;
                 width: 120px;
-                // width: 150px;
                 color: #FA2759;
                 border: solid 2px #FA2759;
                 font-size: 18px;
@@ -167,7 +163,6 @@
             }
             .project-btn {
                 display: flex;
-                //justify-content: center;
             }
         }
     }

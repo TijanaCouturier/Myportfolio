@@ -1,12 +1,10 @@
 .header-text-img {
     display: flex;
     justify-content: space-between;
-    //  padding-top: 250px;
     @media (max-width: 900px) {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        //   padding-top: 70px;
     }
     @media (max-width: 480px) {
         display: flex;

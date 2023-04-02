@@ -1,9 +1,5 @@
 .impressum-container {
     color: white;
-    // width: 100vw;
-    //max-width: 100%;
-    // min-height: 70%;
-    // padding-top: 180px;
     @media (max-width: 480px) {
         padding-left: 30px;
     }
@@ -23,7 +19,6 @@
     }
     .date {
         font-size: 18px;
-        // padding-top: 40px;
         padding-bottom: 50px;
         @media (max-width: 480px) {
             font-size: 16px;

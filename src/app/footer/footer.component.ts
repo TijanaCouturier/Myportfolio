@@ -20,6 +20,7 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
   openLink(f) {
   window.open(this.footerLinks[f]);
   }
