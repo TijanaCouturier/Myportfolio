@@ -10,44 +10,41 @@ export class MySkillsComponent implements OnInit {
 
   skills = [
     {
+      img: './assets/img/Portfolio-img/html.png',
+      title: 'HTML/CSS',
+    },
+    {
       img: './assets/img/Portfolio-img/java script.png',
       title: 'JavaScript',
     },
+    {
+      img: './assets/img/Portfolio-img/api.png',
+      title: 'Rest API',
+    },
+
     {
       img: './assets/img/Portfolio-img/angular.png',
       title: 'Angular',
     },
     {
-      img: './assets/img/Portfolio-img/Group 205.png',
-      title: 'HTML/CSS',
+      img: './assets/img/Portfolio-img/typescript.svg',
+      title: 'Typscript',
     },
     {
-      img: './assets/img/Portfolio-img/Group 226.png',
-      title: 'SCRUM',
+      img: './assets/img/Portfolio-img/firebase.svg',
+      title: 'Firebase',
+    },
+    {
+      img: './assets/img/Portfolio-img/materialdesign.svg',
+      title: 'Material Design',
     },
     {
       img: './assets/img/Portfolio-img/Git-Icon.png',
       title: 'Git',
     },
     {
-      img: './assets/img/Portfolio-img/Group 20.png',
-      title: 'Design Thinking',
-    },
-    {
-      img: './assets/img/Portfolio-img/api.png',
-      title: 'Rest API',
-    },
-    {
-      img: './assets/img/Portfolio-img/thinking.png',
-      title: 'Test Automation',
-    },
-    {
-      img: './assets/img/Portfolio-img/database.png',
-      title: 'Databases',
-    },
-    {
-      img: './assets/img/Portfolio-img/bootstrap.png',
-      title: 'Bootstrap',
+      img: './assets/img/Portfolio-img/scrum.png',
+      title: 'SCRUM',
     }
   ];
 
