@@ -43,11 +43,13 @@
         img {
             height: 300px;
             width: 300px;
-            object-fit: cover;
+            object-fit: contain;
             border-radius: 100%;
             margin-bottom: 50px;
             margin-right: 20px;
-            background-color: #fa2759;
+            // background-color: #fa2759;
+            // background-color: #aea3a1;
+            background-color: #a39494;
             @media (max-width: 755px) {
                 margin-bottom: 0;
             }
