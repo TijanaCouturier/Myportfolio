@@ -28,7 +28,7 @@ export class MySkillsComponent implements OnInit {
     },
     {
       img: './assets/img/Portfolio-img/typescript.svg',
-      title: 'Typscript',
+      title: 'TypeScript',
     },
     {
       img: './assets/img/Portfolio-img/firebase.svg',
